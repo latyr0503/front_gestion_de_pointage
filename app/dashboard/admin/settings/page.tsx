@@ -2,11 +2,11 @@ import React from "react";
 
 export default function settingsPage() {
   return (
-    <div>
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure eaque
-      delectus nisi accusamus repellat perferendis, voluptas dolor assumenda
-      doloribus asperiores quod libero corrupti in, sit dolore voluptates
-      quibusdam pariatur eos.
+    <div className="space-y-5">
+      <h1 className="text-2xl font-bold">Settings</h1>
+      <p className="text-7xl text-muted-foreground">
+        Page en cours de construction
+      </p>
     </div>
   );
 }
