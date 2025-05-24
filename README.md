@@ -146,9 +146,3 @@ Ce projet est sous licence MIT. Voir le fichier `LICENSE` pour plus de détails.
 ## 👥 Auteurs
 
 - Votre Abdoulaye Latyr SENE - latyr0503@gmail.com
-
-## 🙏 Remerciements
-
-- Next.js Team
-- Radix UI
-- Tous les contributeurs des bibliothèques utilisées
