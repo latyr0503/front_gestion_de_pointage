@@ -70,7 +70,7 @@ Le système utilise deux niveaux de rôles principaux :
    2. Creer un admin via l'endpoint (`/auth/signup`)
    3. Changer le role de `USER` à `ADMIN`
    - Ce rôle permet l'accès aux fonctionnalités tel que :
-    - ajouter des pointages
+    - ajouter des pointages (pour l'ajout des pointage seul les utlisateurs incrit sur la base de donnes pourront etre ajouter, dont pour ajouter un pointage faut creer des comptes utlisateurs)
     - modifier des pointages
     - suppimer des pointages
     - Consultation des historique des demandes d'absence
