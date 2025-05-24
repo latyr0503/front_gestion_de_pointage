@@ -1,6 +1,6 @@
 # Projet Next.js
 
-Ce projet est une application web moderne construite avec Next.js 13, utilisant TypeScript et intégrant plusieurs fonctionnalités avancées.
+Ce projet est une application web moderne construite avec **Next.js 13**, utilisant **TypeScript** et intégrant plusieurs fonctionnalités avancées.
 Elle permet de gérer les pointages des employés, les justifications d'absence, et d'autres fonctionnalités liées à la gestion des utilisateurs.
 
 ## 🚀 Technologies Principales
