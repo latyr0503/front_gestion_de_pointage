@@ -3,6 +3,18 @@
 Ce projet est une application web moderne construite avec **Next.js 13**, utilisant **TypeScript** et intégrant plusieurs fonctionnalités avancées.
 Elle permet de gérer les pointages des employés, les justifications d'absence, et d'autres fonctionnalités liées à la gestion des utilisateurs.
 
+## Deploiement
+
+url : https://front-gestion-de-pointage.vercel.app/
+compte admin {
+    email: admin@gmail.com
+    mot de passe : Passer@123
+}
+compte user {
+    email: testeuser@gmail.com
+    mot de passe : Passer@gmail.com
+}
+
 ## 🚀 Technologies Principales
 
 - **Framework**: Next.js 13.5.1
