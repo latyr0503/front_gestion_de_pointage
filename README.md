@@ -107,7 +107,7 @@ Ce projet est sous licence MIT. Voir le fichier `LICENSE` pour plus de détails.
 
 ## 👥 Auteurs
 
-- Votre Nom - Développeur Principal
+- Votre Abdoulaye Latyr SENE - latyr0503@gmail.com
 
 ## 🙏 Remerciements
 
