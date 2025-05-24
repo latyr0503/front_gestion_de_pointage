@@ -11,6 +11,7 @@ const protectedRoutes: Record<string, UserRole[]> = {
 export async function middleware(request: NextRequest) {
   const token = request.cookies.get("token")?.value;
   const userCookie = request.cookies.get("user")?.value;
+  const userRole = userCookie ? JSON.parse(userCookie).role : null;
 
   const pathname = request.nextUrl.pathname;
   const isAuthPage = pathname.startsWith("/auth");
@@ -23,7 +24,9 @@ export async function middleware(request: NextRequest) {
 
   if (isAuthPage) {
     if (token) {
-      return NextResponse.redirect(new URL("/dashboard", request.url));
+      return NextResponse.redirect(
+        new URL(`/dashboard/${userRole}`, request.url)
+      );
     }
     return NextResponse.next();
   }

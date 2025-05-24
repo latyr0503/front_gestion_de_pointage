@@ -23,7 +23,6 @@ import {
   DialogFooter,
   DialogHeader,
   DialogTitle,
-  DialogTrigger,
 } from "@/components/ui/dialog";
 import { Input } from "@/components/ui/input";
 import { Ellipsis, SquarePen, Trash } from "lucide-react";
@@ -55,6 +54,9 @@ export default function AbsencePage() {
         ))}
       </div>
     );
+  }
+  if (isDeleting || isUpdating) {
+    return <div>Chargement...</div>;
   }
   if (error) {
     return <div>Error: {error.message}</div>;
@@ -112,7 +114,7 @@ export default function AbsencePage() {
             (item: JustificationResponse, index: number) => (
               <div
                 key={index}
-                className="w-full min-h-[200px] bg-gray-100 shadow-lg rounded-md p-4 space-y-4"
+                className="w-full min-h-[200px] bg-white shadow-lg rounded-md p-4 space-y-4"
               >
                 <div className="flex items-center justify-between">
                   <h3 className="text-lg font-bold flex items-center gap-2">
