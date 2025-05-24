@@ -114,19 +114,6 @@ Le projet utilise NextAuth.js pour la gestion de l'authentification. Les configu
 - Formulaires validés
 - Notifications toast
 
-## 🔧 Configuration
-
-### Variables d'Environnement
-
-Les variables d'environnement suivantes sont requises :
-
-```env
-# Exemple de configuration
-NEXTAUTH_URL=
-NEXTAUTH_SECRET=
-# Ajoutez d'autres variables selon vos besoins
-```
-
 ### Tailwind CSS
 
 Le projet utilise Tailwind CSS avec une configuration personnalisée dans `tailwind.config.ts`.
