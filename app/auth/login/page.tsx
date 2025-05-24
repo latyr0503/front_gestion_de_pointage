@@ -4,7 +4,6 @@ import Cookies from "js-cookie";
 import { toast } from "sonner";
 import { z } from "zod";
 import { useForm } from "react-hook-form";
-import { LockIcon, MailIcon } from "lucide-react";
 import { useRouter } from "next/navigation";
 
 import { useLoginMutation } from "@/store/api/authApi";
@@ -12,7 +11,7 @@ import { Input } from "@/components/ui/input";
 import { Button } from "@/components/ui/button";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { UserRole } from "@/lib/types";
-
+import Link from "next/link";
 interface ApiLoginResponse {
   user: {
     id: number;
@@ -159,8 +158,14 @@ export default function LoginPage() {
           <h2 className="mt-6 text-start text-3xl font-extrabold text-gray-900">
             Connexion
           </h2>
+          <p className="text-start text-sm text-gray-500">
+            Connectez-vous pour accéder à votre espace
+          </p>
         </div>
         <LoginForm />
+        <div className="text-start text-sm text-gray-500">
+          <Link href="/auth/register">Pas encore inscrit ? Inscrivez-vous</Link>
+        </div>
       </div>
     </div>
   );

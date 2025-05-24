@@ -16,6 +16,7 @@ import { z } from "zod";
 import { UserRole } from "@/lib/types";
 import { useForm, Controller } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
+import Link from "next/link";
 
 const signupSchema = z
   .object({
@@ -195,8 +196,14 @@ export default function SignupPage() {
           <h2 className="text-start text-3xl font-extrabold text-gray-900">
             Inscription
           </h2>
+          <p className="text-start text-sm text-gray-500">
+            Créez un compte pour accéder à votre espace
+          </p>
         </div>
         <SignupForm />
+        <div className="text-start text-sm text-gray-500">
+          <Link href="/auth/login">Déjà inscrit ? Connectez-vous</Link>
+        </div>
       </div>
     </div>
   );
