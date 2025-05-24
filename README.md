@@ -16,20 +16,24 @@ Elle permet de gérer les pointages des employés, les justifications d'absence,
 ## 📦 Installation
 
 1. Clonez le repository :
+
 ```bash
 git clone https://github.com/latyr0503/front_gestion_de_pointage.git
 ```
 
 2. Installez les dépendances avec pnpm :
+
 ```bash
 pnpm install
 ```
 
 3. Configurez les variables d'environnement :
+
 - Copiez le fichier `.env.example` vers `.env`
 - Remplissez les variables d'environnement nécessaires
 
 4. Lancez le serveur de développement :
+
 ```bash
 pnpm dev
 ```
@@ -40,6 +44,40 @@ pnpm dev
 - `pnpm build` : Crée une version de production
 - `pnpm start` : Démarre le serveur de production
 - `pnpm lint` : Exécute le linter
+
+## Gestion des Rôles Utilisateurs
+
+### Rôles Disponibles
+
+Le système utilise deux niveaux de rôles principaux :
+
+- **USER** : Rôle par défaut pour tous les utilisateurs inscrits
+- **ADMIN** : Rôle avec accès aux fonctionnalités administratives
+
+### Inscription et Attribution des Rôles
+
+1. **Inscription Standard**
+
+   - Tous les utilisateurs s'inscrivant via la page d'inscription (`/register`) sont automatiquement attribués au rôle `USER`
+   - Ce rôle permet l'accès aux fonctionnalités de base :
+     - Pointage (entrée/sortie)
+     - Consultation de son historique
+     - Modification de son profil
+
+2. **Promotion en Administrateur**
+   - La promotion d'un utilisateur en administrateur ne peut se faire que via l'API
+   - Utilisation de la documentation Swagger pour modifier le rôle :
+   1. Accéder à l'interface Swagger (`/api-docs`)
+   2. Acceder a l'endpoint (`/auth/signup`)
+   3. Changer le role de `USER` à `ADMIN`
+
+### Exemple de Modification de Rôle via Swagger
+
+```json
+{
+  "role": "ADMIN"
+}
+```
 
 ## 📁 Structure du Projet
 
@@ -113,4 +151,4 @@ Ce projet est sous licence MIT. Voir le fichier `LICENSE` pour plus de détails.
 
 - Next.js Team
 - Radix UI
-- Tous les contributeurs des bibliothèques utilisées 
+- Tous les contributeurs des bibliothèques utilisées
