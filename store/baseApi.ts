@@ -5,7 +5,7 @@ import Cookies from "js-cookie";
 export const baseApi = createApi({
   reducerPath: "api",
   baseQuery: fetchBaseQuery({
-    baseUrl: process.env.API_URL || "http://localhost:3000",
+    baseUrl: process.env.NEXT_PUBLIC_API_URL,
     prepareHeaders: (headers) => {
       const token = Cookies.get("token");
       if (token) {
@@ -13,7 +13,7 @@ export const baseApi = createApi({
       }
       return headers;
     },
-    credentials: "include",
+    credentials: "include", 
   }),
   endpoints: () => ({}),
 });
