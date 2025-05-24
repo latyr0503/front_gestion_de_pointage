@@ -5,12 +5,13 @@ Elle permet de gérer les pointages des employés, les justifications d'absence,
 
 ## Deploiement
 
-url : https://front-gestion-de-pointage.vercel.app/
-compte admin {
+- url : https://front-gestion-de-pointage.vercel.app/
+
+- compte admin {
     email: admin@gmail.com
     mot de passe : Passer@123
 }
-compte user {
+- compte user {
     email: testeuser@gmail.com
     mot de passe : Passer@gmail.com
 }
