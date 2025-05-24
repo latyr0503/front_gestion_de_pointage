@@ -13,7 +13,7 @@ Elle permet de gérer les pointages des employés, les justifications d'absence,
 }
 - compte user {
     email: testeuser@gmail.com
-    mot de passe : Passer@gmail.com
+    mot de passe : Passer@123
 }
 
 ## 🚀 Technologies Principales
